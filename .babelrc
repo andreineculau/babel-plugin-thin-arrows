@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "es2015"
+  ],
+	"plugins": [
+		"syntax-trailing-function-commas",
+    "transform-flow-strip-types",
+		"transform-exponentiation-operator",
+		"transform-object-rest-spread",
+		"transform-do-expressions",
+    "transform-function-bind",
+    "transform-runtime"
+	]
+}
