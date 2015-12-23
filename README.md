@@ -31,13 +31,12 @@ extensible and it's hard to monkey-patch it.
 
 There are couple of reasons I made this plugin.
 
-* First I'm switching from CoffeScript
-* Second is that writing `function` everywhere sucks,
-  and I've noticed that people prefer to use `=>` whenever possible.
+* I'm switching from CoffeScript
+* Writing `function` everywhere sucks, and I've noticed that people
+  prefer to use `=>` whenever possible.
 * Writing mocha tests I have an option of either loosing
-  `this` context in tests, which is a big part of mocha
-  flow or having gazillion `function` keywords polluting
-  my sweet beautiful tests.
+  `this` context in tests or having gazillion `function`
+	keywords polluting my sweet beautiful tests.
 
 ```
 beforeEach(() -> {
