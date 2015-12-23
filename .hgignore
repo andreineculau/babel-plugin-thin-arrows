@@ -2,5 +2,4 @@
 lib/
 node_modules/
 .npmrc
-test-results.xml
 npm-debug.log

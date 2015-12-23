@@ -42,6 +42,9 @@
   "name": "@rainydio/babel-plugin-thin-arrows",
   "version": "1.0.0",
   "description": "Coffeescript style thin arrow. Function expression basically.",
+  "repository": "bitbucket:rainydio/node-babel-plugin-thin-arrows",
   "author": "Dmitry Tyschenko",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": "https://bitbucket.org/rainydio/node-babel-plugin-thin-arrows/issues",
+  "homepage": "https://bitbucket.org/rainydio/node-babel-plugin-thin-arrows"
 }
