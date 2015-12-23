@@ -30,6 +30,7 @@ But cutting a corner by *not* introducing new token
 extensible and it's hard to monkey-patch it.
 
 There are couple of reasons I made this plugin.
+
 * First I'm switching from CoffeScript
 * Second is that writing `function` everywhere sucks,
   and I've noticed that people prefer to use `=>` whenever possible.
