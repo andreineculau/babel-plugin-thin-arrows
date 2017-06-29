@@ -1,50 +1,8 @@
 {
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "exit 0",
-    "build": "gulp build",
-    "bump": "npm version --no-git-tag-version $(next-version)"
-  },
-  "files": [
-    "lib"
-  ],
-  "directories": {
-    "test": "test"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "peerDependencies": {
-    "babel-core": "*",
-    "babylon": "*"
-  },
-  "devDependencies": {
-    "@rainydio/next-version": "latest",
-    "babel-cli": "latest",
-    "babel-core": "latest",
-    "babel-eslint": "latest",
-    "babel-plugin-transform-flow-strip-types": "latest",
-    "babel-plugin-syntax-trailing-function-commas": "latest",
-    "babel-plugin-transform-do-expressions": "latest",
-    "babel-plugin-transform-exponentiation-operator": "latest",
-    "babel-plugin-transform-function-bind": "latest",
-    "babel-plugin-transform-object-rest-spread": "latest",
-    "babel-plugin-transform-runtime": "latest",
-    "babel-preset-es2015": "latest",
-    "eslint": "latest",
-    "eslint-config-airbnb": "latest",
-    "gulp": "latest",
-    "gulp-babel": "latest",
-    "gulp-eslint": "latest",
-    "gulp-sourcemaps": "latest",
-    "rimraf": "latest"
-  },
-  "name": "@rainydio/babel-plugin-thin-arrows",
+  "name": "babel-plugin-thin-arrows",
   "version": "1.0.0",
   "description": "Coffeescript style thin arrow. Function expression basically.",
-  "repository": "bitbucket:rainydio/node-babel-plugin-thin-arrows",
+  "repository": "git://github.com/rainydio/node-babel-plugin-thin-arrows",
   "author": "Dmitry Tyschenko",
-  "license": "ISC",
-  "bugs": "https://bitbucket.org/rainydio/node-babel-plugin-thin-arrows/issues",
-  "homepage": "https://bitbucket.org/rainydio/node-babel-plugin-thin-arrows"
+  "license": "ISC"
 }

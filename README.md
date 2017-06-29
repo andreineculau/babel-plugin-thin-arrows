@@ -1,3 +1,10 @@
+**NOTE** https://bitbucket.org/rainydio/node-babel-plugin-thin-arrows fork
+
+Works on babel v6
+IFF `babylon/lib/index.js` is patched with `exports.plugins = plugins;`.
+
+---
+
 Thin arrow function expression syntax for [babel].
 
 ```
@@ -9,7 +16,7 @@ Thin arrow function expression syntax for [babel].
 ### Installation
 
 ```
-npm install --save-dev @rainydio/babel-plugin-thin-arrows
+npm install --save-dev git+https://github.com/andreineculau/babel-plugin-thin-arrows
 ```
 
 ### Disclaimer
@@ -28,28 +35,6 @@ It's using somewhat same approach that JSX and Flow plugins.
 But cutting a corner by *not* introducing new token
 `ThinArrowFunctionExpression`. Mostly because [babel-types] isn't
 extensible and it's hard to monkey-patch it.
-
-There are couple of reasons I made this plugin.
-
-* I'm switching from CoffeScript
-* Writing `function` everywhere sucks, and I've noticed that people
-  prefer to use `=>` whenever possible.
-* Writing mocha tests I have an option of either loosing
-  `this` context in tests or having gazillion `function`
-	keywords polluting my sweet beautiful tests.
-
-```
-beforeEach(() -> {
-	this.clock = sinon.useFakeTimers();
-});
-afterEach(() -> {
-	this.clock.restore();
-});
-it("should tick", (done) -> {
-	setTimeout(done, 100);
-	this.clock.tick(100);
-});
-```
 
 [babel]: https://babeljs.io/
 [babylon]: https://github.com/babel/babel/tree/master/packages/babylon

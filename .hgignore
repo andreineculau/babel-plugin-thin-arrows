@@ -1,5 +1,0 @@
-.bin/
-lib/
-node_modules/
-.npmrc
-npm-debug.log
